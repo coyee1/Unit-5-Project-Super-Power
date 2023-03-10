@@ -1,0 +1,78 @@
+<!DOCTYPE html> <html><head>
+        <title>Unit 5 Project Super Power!</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #04A277;
+    text-align: center;
+    font-size:30px;
+    color:blue;
+}
+
+img {
+    width: 480px;
+    justify-content: center;
+}
+button{
+	color:purple;
+    background-color:pink;
+}
+
+
+</style></head>
+    <body>
+        <div class="title">
+            <h1>Super Power!</h1>
+        </div>
+        <div class="questions">
+            <h4>What month were you born?</h4>
+            <div class="buttons">
+                <input class="input1" placeholder="Month">
+
+
+                <button class="button">Sumbit!</button>
+            </div>
+            <p class="p"> </p>
+            <h4>Flight or Strength?</h4>
+            <img src="https://cdn.mos.cms.futurecdn.net/yqkQVV8mkxhYEYzSF6MKxY-970-80.jpg.webp">
+            <img src="https://cdn.britannica.com/64/182864-050-8975B127/Scene-The-Incredible-Hulk-Louis-Leterrier.jpg?w=300&amp;h=300 ">
+            <p></p>
+            <input class="input2" placeholder="Superpower!">
+            <button class="button1">Sumbit!</button>
+        </div>
+        <div class="result">
+        </div>
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var button = document.querySelector("button");
+
+button.onclick = function () {
+  var month = document.querySelector = ".input1".value;
+
+  if (month <= 6) {
+    document.querySelector = ".p".innerHTML = "yay";
+  } else if (month <= 12) {
+    document.querySelector = ".p".innerHTML = "yep";
+  } else {
+    document.querySelector = ".p".innerHTML = "try again";
+  }
+};
+
+button.onclick = function () {
+  var Superpower = document.querySelector = "input2".value;
+
+  if (Superpower === "Thor") {
+    document.querySelector = ".result".innerHTML = "God of Thunder!";
+  }
+
+  if (Superpower === "Hulk") {
+    document.querySelector = ".result".innerHTML = "The Incredible Hulk!";
+  } else {
+    document.querySelector = ".result".innerHTML = "try again";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1dHRvbiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsIm9uY2xpY2siLCJtb250aCIsInZhbHVlIiwiaW5uZXJIVE1MIiwiU3VwZXJwb3dlciJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsTUFBTSxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsUUFBdkIsQ0FBYjs7QUFDQUYsTUFBTSxDQUFDRyxPQUFQLEdBQWlCLFlBQVc7QUFDeEIsTUFBSUMsS0FBSyxHQUFHSCxRQUFRLENBQUNDLGFBQVQsR0FBMEIsU0FBRCxDQUFZRyxLQUFqRDs7QUFFQSxNQUFJRCxLQUFLLElBQUksQ0FBYixFQUFnQjtBQUNaSCxJQUFBQSxRQUFRLENBQUNDLGFBQVQsR0FBMEIsSUFBRCxDQUFPSSxTQUFQLEdBQW1CLEtBQTVDO0FBQ0gsR0FGRCxNQUVPLElBQUlGLEtBQUssSUFBSSxFQUFiLEVBQWlCO0FBQ3BCSCxJQUFBQSxRQUFRLENBQUNDLGFBQVQsR0FBMEIsSUFBRCxDQUFPSSxTQUFQLEdBQW1CLEtBQTVDO0FBQ0gsR0FGTSxNQUVBO0FBQ0hMLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxHQUEwQixJQUFELENBQU9JLFNBQVAsR0FBbUIsV0FBNUM7QUFDSDtBQUNKLENBVkQ7O0FBV0FOLE1BQU0sQ0FBQ0csT0FBUCxHQUFpQixZQUFVO0FBQzNCLE1BQUlJLFVBQVUsR0FBR04sUUFBUSxDQUFDQyxhQUFULEdBQTBCLFFBQUQsQ0FBV0csS0FBckQ7O0FBQ0EsTUFBSUUsVUFBVSxLQUFLLE1BQW5CLEVBQTJCO0FBQ3ZCTixJQUFBQSxRQUFRLENBQUNDLGFBQVQsR0FBMEIsU0FBRCxDQUFZSSxTQUFaLEdBQXdCLGlCQUFqRDtBQUNIOztBQUFDLE1BQUlDLFVBQVUsS0FBSyxNQUFuQixFQUEyQjtBQUN6Qk4sSUFBQUEsUUFBUSxDQUFDQyxhQUFULEdBQTBCLFNBQUQsQ0FBWUksU0FBWixHQUF3QixzQkFBakQ7QUFDSCxHQUZDLE1BRU87QUFDTEwsSUFBQUEsUUFBUSxDQUFDQyxhQUFULEdBQTBCLFNBQUQsQ0FBWUksU0FBWixHQUF3QixXQUFqRDtBQUNDO0FBQ0osQ0FURCIsInNvdXJjZXNDb250ZW50IjpbImxldCBidXR0b24gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiYnV0dG9uXCIpO1xuYnV0dG9uLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICBsZXQgbW9udGggPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yID0gKFwiLmlucHV0MVwiKS52YWx1ZTtcblxuICAgIGlmIChtb250aCA8PSA2KSB7XG4gICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IgPSAoXCIucFwiKS5pbm5lckhUTUwgPSBcInlheVwiO1xuICAgIH0gZWxzZSBpZiAobW9udGggPD0gMTIpIHtcbiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvciA9IChcIi5wXCIpLmlubmVySFRNTCA9IFwieWVwXCI7XG4gICAgfSBlbHNlIHtcbiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvciA9IChcIi5wXCIpLmlubmVySFRNTCA9IFwidHJ5IGFnYWluXCI7XG4gICAgfVxufTtcbmJ1dHRvbi5vbmNsaWNrID0gZnVuY3Rpb24oKXtcbmxldCBTdXBlcnBvd2VyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvciA9IChcImlucHV0MlwiKS52YWx1ZTtcbmlmIChTdXBlcnBvd2VyID09PSBcIlRob3JcIikge1xuICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IgPSAoXCIucmVzdWx0XCIpLmlubmVySFRNTCA9IFwiR29kIG9mIFRodW5kZXIhXCI7XG59IGlmIChTdXBlcnBvd2VyID09PSBcIkh1bGtcIikge1xuICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IgPSAoXCIucmVzdWx0XCIpLmlubmVySFRNTCA9IFwiVGhlIEluY3JlZGlibGUgSHVsayFcIjtcbn0gICBlbHNlIHtcbiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yID0gKFwiLnJlc3VsdFwiKS5pbm5lckhUTUwgPSBcInRyeSBhZ2FpblwiO1xuICAgIH1cbn07XG4iXX0=</script></body></html>
